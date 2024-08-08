@@ -11,5 +11,8 @@
   "dependencies": {
     "csv-writer": "^1.6.0",
     "simple-git": "^3.25.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
