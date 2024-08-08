@@ -20,8 +20,8 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/git-commit-stats-analyzer.git
-   cd git-commit-stats-analyzer
+   git clone https://github.com/your-username/git-commit-analyzer.git
+   cd git-commit-analyzer
    ```
 
 2. Install the necessary dependencies:
@@ -35,7 +35,7 @@
 1. Navigate to the project directory:
 
    ```bash
-   cd git-commit-stats-analyzer
+   cd git-commit-analyzer
    ```
 
 2. Run the application:
