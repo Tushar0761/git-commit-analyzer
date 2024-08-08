@@ -1,10 +1,11 @@
+console.clear()
 const simpleGit = require("simple-git");
 const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 
 const git = simpleGit();
 
 const csvWriter = createCsvWriter({
-    path: "commit_stats_2.csv",
+    path: "commit_stats.csv",
     header: [
         { id: "count", title: "Sr" },
         { id: "message", title: "Commit Message" },
@@ -16,13 +17,13 @@ const csvWriter = createCsvWriter({
 });
 
 async function getCommitStats() {
-  console.time("loop done");
-
     try {
-      console.time("Function Started");
-        
+
       const log = await git.log();
-        let commits = log.all;
+console.log(log);
+
+      let commits = log.all;
+
         commits = commits.reverse();
         commits = commits.filter((c) => c.author_name === "Tushar Panchal");
       const rowData = []
